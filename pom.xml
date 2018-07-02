@@ -15,7 +15,7 @@
 
 	<repositories>
     	<repository>
-    		<id>local</id>
+    		<id>blastfurnace</id>
     		<url>http://localhost:8081/artifactory/libs-release-local</url>
     		<snapshots>
         		<enabled>true</enabled>
@@ -53,7 +53,7 @@
     	<profile>
     		<id>dev</id>
     		<activation>
-                <activeByDefault>true</activeByDefault>
+                <activeByDefault>false</activeByDefault>
             </activation>
             <properties>
             	<activatedProperties>dev</activatedProperties>
@@ -110,7 +110,7 @@
     	<profile>
     		<id>release</id>
     		<activation>
-                <activeByDefault>false</activeByDefault>
+                <activeByDefault>true</activeByDefault>
             </activation>
             <properties>
             	<packaging>jar</packaging>
@@ -169,7 +169,7 @@
 		    </dependencies>
 		    
             <build>
-            	<finalName>${project.name}</finalName>
+            	
     			<plugins>
     			
         		<plugin>
