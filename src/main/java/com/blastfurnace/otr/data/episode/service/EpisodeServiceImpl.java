@@ -13,7 +13,7 @@ import com.blastfurnace.otr.data.episode.model.EpisodeSummary;
 import com.blastfurnace.otr.data.episode.repository.EpisodeRepository;
 import com.blastfurnace.otr.data.episode.repository.EpisodeSummaryRepository;
 import com.blastfurnace.otr.data.episode.service.model.EpisodeDataWrapper;
-import com.blastfurnace.otr.rest.request.QueryData;
+import com.blastfurnace.otr.service.request.QueryData;
 
 @Component("EpisodeService")
 public class EpisodeServiceImpl implements EpisodeService {
